@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Connect to docker",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            //"remotePath": "${workspaceFolder}/cmd",
+            "port": 4000,
+            "host": "127.0.0.1"
+        },
+        {
             "name": "Debug locally",
             "type": "go",
             "request": "launch",
